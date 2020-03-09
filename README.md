@@ -12,6 +12,7 @@ def main():
     
 def prepareTestData():
     # create root element
+    
     root = ET.Element('Tesla')
     roadster =	{ "id": "TR",
                   "model": "Tesla Roadster",
@@ -39,6 +40,7 @@ def prepareTestData():
     return root
 
 def addCar(parentElm, props):
+
     car = ET.SubElement(parentElm, 'car', {'id':props['id']})
 
     model = ET.SubElement(car, 'model')
@@ -51,6 +53,7 @@ def addCar(parentElm, props):
     rapidCharge = ET.SubElement(fullCharge, 'rapidCharge', {'timeScale':props['time']})
     rapidCharge.text = props['rCharge']
     
+
 output:
 ------
 you will have the file TeslaCars.xml with following content:
