@@ -59,6 +59,7 @@ output:
 ------
 you will have the file TeslaCars.xml with following content:
 
+```xml
 <Tesla>
   <car id="TR">
     <model>Tesla Roadster</model>
@@ -82,5 +83,6 @@ you will have the file TeslaCars.xml with following content:
     </fullCharge>
   </car>
 </Tesla>
+```
 
 can pass the indent as empty string if no indentation is needed.
