@@ -9,7 +9,7 @@ def main():
 
     root = prepareTestData()
     tdata = open('TeslaCars.xml', 'w')
-    writeXMLtoFile(root, tdata, '  ')
+    writeXMLtoFile(root, outFile=tdata, indent='  ')
     
 def prepareTestData():
     
