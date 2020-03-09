@@ -1,5 +1,5 @@
 # xml2file
-python code to write ElementTree to file
+python code to write ElementTree to file(pretty print)
 
 Call the writeXMLtoFile() with root Element, output file & indentation text(as needed).
 
