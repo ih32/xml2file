@@ -6,13 +6,14 @@ Call the writeXMLtoFile() with root Element, output file & indentation text(as n
 Sample :
 
 def main():
+
     root = prepareTestData()
     tdata = open('TeslaCars.xml', 'w')
     writeXMLtoFile(root, tdata, '  ')
     
 def prepareTestData():
-    # create root element
     
+    # create root element    
     root = ET.Element('Tesla')
     roadster =	{ "id": "TR",
                   "model": "Tesla Roadster",
